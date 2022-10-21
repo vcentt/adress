@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Form</title>
+
+    <style>
+        label {
+            color:black;
+            size: 2in;
+        }
+
+        input {
+            width: 400px;
+            padding: 6px 15px;
+            margin: 2px 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+         width: 25px;
+        }
+
+        select {
+            padding: 6px 15px;
+            margin: 2px 0;
+            box-sizing: border-box;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Add a new address</h1>
+ <br>
+ <form name="formulario" method="post" action="addadress.php">
+        <label><b>Country/Region</b></label>
+     <br>
+        <select name="Country/Region">
+            <option value="1">United States</option>
+            <option value="2">Canada</option>
+            <option value="3">Dominican Republic</option>
+        </select>
+     <br><br>
+        <label><b>Full Name</b></label>
+     <br>
+        <input type="text" name="name"/>
+     <br><br>
+        <label><b>Phone Number</b></label>
+     <br>
+        <input type="tel" name="phonenumber" maxlength="20"/>
+     <br><br>
+        <label><b>Adress</b></label>
+     <br>
+        <input type="text" name="adress" placeholder="Street adress or P.P Box"/>
+     <br>
+        <input type="text" name="adress2" placeholder="Apt, suite, unit, building, floor, etc."/>
+     <br><br>
+        <label><b>ZIP Code</b></label>
+     <br>
+        <input type="text" name="zipcode" maxlength="7"/>
+     <br><br>
+        <input type="checkbox" class="box"/>
+        <label><b>Make this my default address</b></label>
+
+     <br><br><br>
+        <input type="submit" value="Add adress" style="color:black;"/>
+    </form>
+
+</body>
+</html>
